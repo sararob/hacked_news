@@ -1,1 +1,17 @@
 @import "bootstrap";
+
+/* Article Index Page */
+
+.submitted-by, .comments {
+  display: inline;
+}
+
+/* Article Show Page */
+
+#article-show-title {
+  display: inline;
+}
+
+#show-link {
+  display: inline;
+}
