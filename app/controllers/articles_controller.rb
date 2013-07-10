@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   def index
-
+    @articles = Article.all
   end
 
   def new
@@ -11,7 +11,7 @@ class ArticlesController < ApplicationController
     @article = Article.new(params[:article])
 
     if @article.save
-      flash[:notice] = @article.name " was added."
+      flash[:notice] = @article.title " was added."
       redirect_to root_path
     else
       flash[:error] = "An error occurred, please try again."

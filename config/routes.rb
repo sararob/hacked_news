@@ -5,6 +5,7 @@ HackedNews::Application.routes.draw do
 
   resources :articles
   resources :comments
+  resources :votes
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
