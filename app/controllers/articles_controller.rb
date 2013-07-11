@@ -25,6 +25,10 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     @comment = Comment.new
-    @comments = @article.comments
+    @comments = @article.comments.order("created_at desc")
+  end
+
+  def newest
+    @articles = Article.order("created_at desc")
   end
 end

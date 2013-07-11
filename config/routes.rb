@@ -1,11 +1,13 @@
 HackedNews::Application.routes.draw do
-  devise_for :users
-
   root to: "articles#index"
 
-  resources :articles
-  resources :comments
-  resources :votes
+  devise_for :users
+  get 'profile(/:user_id)' => 'users#show', :as => :profile
+
+  resources :articles, :comments, :votes
+
+  get "newest" => "articles#newest"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

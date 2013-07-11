@@ -32,11 +32,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'devise'
 gem 'jquery-rails'
 gem 'simple_form'
 gem 'delayed_job_active_record'
 gem 'bootstrap-sass', '~> 2.2.2.0'
-gem 'devise'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

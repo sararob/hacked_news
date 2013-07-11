@@ -1,0 +1,17 @@
+<h4 id="article-show-title"><%= @article.title %></h4>
+<div id="show-link">(<%= link_to @article.url %>)</div>
+<br><br>
+<%= simple_form_for(@comment, html: { class: "form-horizontal" }) do |f| %>
+    <%= f.input :text, as: :text, label: false, input_html: {rows: 4} %><br>
+    <%= f.input :user_id, as: :hidden, input_html: { value: current_user.id } %>
+    <%= f.input :article_id, as: :hidden, input_html: { value: @article.id } %>
+    <%= f.submit "Add Comment", class: "btn" %>
+<% end %>
+
+<div id="comments">
+  <% @comments.each do |comment| %>
+    <%= link_to ((User.where("id = ?", comment.user_id))[0].username), profile_path(user_id: (User.where("id = ?", comment.user_id))[0].id) %><br>
+    <%= comment.text %><br>
+    <%= time_ago_in_words(comment.created_at) %> ago<br><br>
+  <% end %>
+</div>

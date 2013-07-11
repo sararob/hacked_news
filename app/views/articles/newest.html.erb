@@ -1,0 +1,17 @@
+<div class="articles">
+  <% @articles.each do |article| %>
+      <div class="title">
+        <%= link_to image_tag('votearrow.gif'), votes_path(value: 1), method: :post %>
+        <%= link_to article.title, article.url %>
+        <%= image_tag("http://www.google.com/s2/favicons?domain_url=" + article.url) %>
+      </div>
+      <div class="submitted-by">
+        Submitted by <%= (User.where("id = ?", article.user_id))[0].username %>
+        <%= time_ago_in_words(article.created_at) %> ago |
+      </div>
+      <div class="comments">
+        <%= link_to pluralize((article.comments.count), 'comment'), article_path(id: article.id) %>
+      </div>
+      <br><br>
+  <% end %>
+</div>

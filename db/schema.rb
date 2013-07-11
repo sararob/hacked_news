@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130710204845) do
+ActiveRecord::Schema.define(:version => 20130711000540) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(:version => 20130710204845) do
     t.integer  "comment_id"
     t.integer  "votable_id"
     t.string   "votable_type"
+    t.integer  "user_id"
   end
 
 end
