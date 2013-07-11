@@ -2,16 +2,20 @@
 
 /* Article Index Page */
 
-.submitted-by, .comments {
-  display: inline;
+.articles {
+  margin-top: 30px;
+  .submitted-by, .comments {
+    display: inline;
+  }
 }
-
 /* Article Show Page */
 
-#article-show-title {
-  display: inline;
+#article-content {
+  margin-top: 30px;
+  #article-show-title {
+    display: inline;
+  }
 }
-
 #show-link {
   display: inline;
 }

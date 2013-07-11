@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   before_filter :authenticate_user!, only: [:new, :create]
 
   def index
-    @articles = Article.all
+    @articles = Article.all.sort { |a,b| b.num_votes <=> a.num_votes }
   end
 
   def new
@@ -25,7 +25,7 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     @comment = Comment.new
-    @comments = @article.comments.order("created_at desc")
+    @comments = @article.comments.sort { |a,b| b.comment_votes <=> a.comment_votes }
   end
 
   def newest

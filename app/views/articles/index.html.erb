@@ -1,8 +1,7 @@
-<h1>HackedNews</h1>
 <div class="articles">
   <% @articles.each do |article| %>
   <div class="title">
-    <%= link_to image_tag('votearrow.gif'), votes_path(votable_id: article.id, value: 1, votable_type: "Article"), method: :post %>
+    <%= link_to image_tag('votearrow.gif'), votes_path(votable_id: article.id, value: 1, votable_type: "Article", user_id: current_user.id), method: :post %>
     <%= link_to article.title, article.url %>
     <%= image_tag("http://www.google.com/s2/favicons?domain_url=" + article.url) %>
   </div>
