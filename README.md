@@ -6,3 +6,6 @@
     three models. Comments and articles have many votes, and a vote belongs to both as votable. I used devise for user authentication.
 </p>
 <h3>Challenges of Scaling</h3>
+<p>
+    To support more traffic, I could scale up to more dynos on Heroku.
+</p>
