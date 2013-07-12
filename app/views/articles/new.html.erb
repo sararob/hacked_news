@@ -3,8 +3,6 @@
     <%= f.input :title, required: false %>
     <%= f.input :url, required: false %>
     <%= f.input :user_id, as: :hidden, input_html: { value: current_user.id } %>
-
-    <div class="form-actions">
-      <%= f.submit "Submit", class: "btn" %>
-    </div>
+    <br><br>
+    <%= f.submit "Submit", class: "btn" %>
 <% end %>
