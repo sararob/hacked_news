@@ -7,5 +7,5 @@
 </p>
 <h3>Challenges of Scaling</h3>
 <p>
-    To support more traffic, I could scale up to more dynos on Heroku.
+    To support more traffic, I could scale up to more dynos on Heroku. For enhanced scalability, I would want to add redundant firewalls and more web servers. To support more complex features,
 </p>
