@@ -7,5 +7,5 @@
 </p>
 <h3>Challenges of Scaling</h3>
 <p>
-    To support more traffic, I could scale up to more dynos on Heroku. For enhanced scalability, I would want to add redundant firewalls and more web servers. To support more complex features,
+    To support more traffic, I could scale up to more dynos on Heroku. For enhanced scalability, I would want to add redundant firewalls and more web servers. To support more complex features, I would want to think about features the users would value most, and focus on adding one at a time. For example, next I might want to add the ability to reply to comments, and nest the replies under each comment. Once I had an active user base, I might want to think about letting users pay (using Stripe, of course) to feature a submitted article on the top of the home page for a specified time period.
 </p>

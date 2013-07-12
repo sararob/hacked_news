@@ -7,8 +7,7 @@
   </div>
   <div class="submitted-by">
     <%= pluralize(article.votes.count, 'vote') %>
-    <% user = User.where("id = ?", article.user_id)[0] %>
-    by <%= link_to user.username, profile_path(user_id: user.id) %>
+    by <%= link_to article.user.username, profile_path(user_id: article.user.id) %>
     <%= time_ago_in_words(article.created_at) %> ago |
   </div>
   <div class="comments">
