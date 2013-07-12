@@ -11,6 +11,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(params[:article])
+    @article.user_id = current_user.id
 
     if @article.save
       flash[:notice] = @article.title + " was added."
