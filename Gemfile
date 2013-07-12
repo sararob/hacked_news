@@ -35,8 +35,6 @@ end
 gem 'devise'
 gem 'jquery-rails'
 gem 'simple_form'
-gem 'delayed_job_active_record'
-gem 'bootstrap-sass', '~> 2.2.2.0'
 
 
 # To use ActiveModel has_secure_password

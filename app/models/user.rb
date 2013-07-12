@@ -9,8 +9,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me, :username
   # attr_accessible :title, :body
 
-  validates_presence_of :username
-  validates_uniqueness_of :username
+  validates :username, presence: true, uniqueness: true
 
   has_many :votes
   has_many :articles
