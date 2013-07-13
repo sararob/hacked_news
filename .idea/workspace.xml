@@ -25,8 +25,8 @@
     <file path="$PROJECT_DIR$/../cultivian_construction/app/assets/stylesheets/pages.css.scss" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373474559971" ignored="false" />
     <file path="/20130710181917_remove_article_id_and_comment_id_from_votes.rb" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373480599814" ignored="false" />
     <file path="/20130710182412_remove_article_id_and_comment_id_from_votes.rb" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373480658110" ignored="false" />
-    <file path="/a.dummy" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373755188718" ignored="false" />
-    <file path="/show.html.erb" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373755569327" ignored="false" />
+    <file path="/a.dummy" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373756548067" ignored="false" />
+    <file path="/show.html.erb" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373756560737" ignored="false" />
     <file path="/comments_controller.rb" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373556943234" ignored="false" />
     <file path="/20130710203641_add_user_id_to_comments.rb" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373488637584" ignored="false" />
     <file path="$PROJECT_DIR$/log/development.log" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373733898451" ignored="false" />
@@ -35,7 +35,7 @@
     <file path="/users_controller.rb" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373503301952" ignored="false" />
     <file path="/20130713162004_remove_user_id_from_articles.rb" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373732418762" ignored="false" />
     <file path="/20130713162245_remove_user_id_from_articles.rb" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373732598447" ignored="false" />
-    <file path="/production.rb" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373733907704" ignored="false" />
+    <file path="/production.rb" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373756555434" ignored="false" />
     <file path="$PROJECT_DIR$/../sample_app/app/helpers/users_helper.rb" changelist="77fd2cb1-42ef-4f14-9e63-bc70a1585f42" time="1373755166014" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,6 +85,15 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="11" column="35" selection-start="473" selection-end="473" vertical-scroll-proportion="0.33333334">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/db/seeds.rb">
               <provider selected="true" editor-type-id="text-editor">
@@ -121,10 +130,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="custom.css.scss" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="42" column="19" selection-start="677" selection-end="677" vertical-scroll-proportion="0.73730296">
+                <state line="36" column="55" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -206,10 +215,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="17" selection-start="271" selection-end="271" vertical-scroll-proportion="0.16453382">
+                <state line="1" column="52" selection-start="103" selection-end="103" vertical-scroll-proportion="0.047169812">
                   <folding />
                 </state>
               </provider>
@@ -237,12 +246,12 @@
         <option value="$PROJECT_DIR$/db/migrate/20130713162004_remove_user_id_from_articles.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130713162245_remove_user_id_from_articles.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/articles/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/newest.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/users_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
       </list>
     </option>
   </component>
@@ -810,9 +819,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3252841" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980362" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25261584" sideWeight="0.67329544" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25261584" sideWeight="0.67471594" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -821,7 +831,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32670453" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970452" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -915,13 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="32" selection-start="2041" selection-end="2041" vertical-scroll-proportion="0.6497373">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="24" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.028571429">
@@ -985,16 +987,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="271" selection-end="271" vertical-scroll-proportion="0.16453382">
+        <state line="36" column="55" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="19" selection-start="677" selection-end="677" vertical-scroll-proportion="0.73730296">
+        <state line="11" column="35" selection-start="473" selection-end="473" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="52" selection-start="103" selection-end="103" vertical-scroll-proportion="0.047169812">
           <folding />
         </state>
       </provider>
