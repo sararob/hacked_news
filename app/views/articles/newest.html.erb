@@ -6,7 +6,8 @@
         <%= image_tag("http://www.google.com/s2/favicons?domain_url=" + article.url) %>
       </div>
       <div class="submitted-by">
-        Submitted by <%= (User.where("id = ?", article.user_id))[0].username %>
+        <%= pluralize(article.votes.count, 'vote') %>
+        by <%= link_to article.user.username, profile_path(user_id: article.user.id) %>
         <%= time_ago_in_words(article.created_at) %> ago |
       </div>
       <div class="comments">
