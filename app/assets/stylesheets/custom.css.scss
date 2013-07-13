@@ -34,6 +34,15 @@ body {
 
 /* User Show Page */
 
+#gravatar {
+  display: inline-block;
+}
+
+#username {
+  display: inline-block;
+  margin-left: 10px;
+}
+
 #created {
   display: inline;
 }

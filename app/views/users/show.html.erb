@@ -1,4 +1,5 @@
-<h3><%= @user.username %></h3>
+<div id="gravatar"><%= gravatar_for @user %></div>
+<h3 id="username"><%= @user.username %></h3><br><br>
 <h3 id="created">Created: </h3>
 <span><%= time_ago_in_words(@user.created_at) %> ago</span>
 <h3>Articles:</h3>
